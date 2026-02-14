@@ -1,10 +1,10 @@
 {
   "version": 2,
   "builds": [
-    { "src": "api/tiktok.py", "use": "@vercel/python" }
+    { "src": "api/scan.py", "use": "@vercel/python" }
   ],
   "routes": [
-    { "src": "/tiktok/search", "dest": "api/tiktok.py" },
-    { "src": "/", "dest": "api/tiktok.py" }
+    { "src": "/scan-link", "dest": "api/scan.py" },
+    { "src": "/", "dest": "api/scan.py" }
   ]
 }
